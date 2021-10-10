@@ -38,7 +38,7 @@ func (t *Todos) Get(id int) *Todo {
 }
 
 func (t *Todos) Save(file string) error {
-	json, err := json.Marshal(t)
+	json, err := t.Json()
 	if err != nil {
 		return err
 	}
@@ -50,6 +50,10 @@ func (t *Todos) Save(file string) error {
 
 func (t *Todos) Add(todo Todo) {
 	t.Todos = append(t.Todos, todo)
+}
+
+func (t *Todos) Json() ([]byte, error) {
+	return json.Marshal(t)
 }
 
 func read(file string, todos *Todos) error {

@@ -3,7 +3,6 @@ package todo
 import (
 	"errors"
 	"fmt"
-	"log"
 
 	"github.com/awisu2/goTodo/status"
 )
@@ -24,7 +23,6 @@ func End(file string, id int) error {
 	todo.Status = status.END
 
 	// 保存
-	log.Println(todos, todo)
 	if err := todos.Save(file); err != nil {
 		return err
 	}
