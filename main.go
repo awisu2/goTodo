@@ -1,7 +1,11 @@
 package main
 
-import "log"
+import (
+	"github.com/awisu2/goTodo/cmd"
+)
 
 func main() {
-	log.Println("hello world")
+	// INFO: ここでエラーハンドリングすると、余計なログ出力になるのでキャッチしない
+	// cobra の requireエラーは *errors.errorString だったソース覗いても専用のErrorを用意しないみたいなので判別不可
+	cmd.Execute()
 }
