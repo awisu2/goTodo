@@ -45,6 +45,12 @@ github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da/go.mod h1:Q73ZrmV
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/awisu2/goUtils v0.0.10 h1:GsPBs3ZYcahKPQJGw7X+gJ92762OX3D7BnJdU3f4Jv8=
 github.com/awisu2/goUtils v0.0.10/go.mod h1:KZbVFCOxAdOCNOQ5K5qCrD2YNrf+pZWcB54+WLn6anM=
+github.com/awisu2/goUtils v0.0.17 h1:q/V0dDiYqulBjTYzS2cNra7A6UfQ/0Xg16GyfUev+6E=
+github.com/awisu2/goUtils v0.0.17/go.mod h1:VuSrVRiF5DmGfCnS7C4QkxnOQBO7Pf6ohd1sOVQd72w=
+github.com/awisu2/goUtils v0.0.18 h1:Lgtw2Je7TwUj8yjfhRaXYS79b8w2t8RuI9zIYudk6m4=
+github.com/awisu2/goUtils v0.0.18/go.mod h1:VuSrVRiF5DmGfCnS7C4QkxnOQBO7Pf6ohd1sOVQd72w=
+github.com/awisu2/goUtils v0.0.19 h1:GszkIW0JOFXP/Lw6tk9M5kigelPDvdOK7jy9ft6LJ5E=
+github.com/awisu2/goUtils v0.0.19/go.mod h1:VuSrVRiF5DmGfCnS7C4QkxnOQBO7Pf6ohd1sOVQd72w=
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
 github.com/bketelsen/crypt v0.0.4/go.mod h1:aI6NrJ0pMGgvZKL1iVgXLnfIFJtfV+bKCoqOes/6LfM=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
@@ -254,6 +260,7 @@ golang.org/x/exp v0.0.0-20200119233911-0405dc783f0a/go.mod h1:2RIsYlXP63K8oxa1u0
 golang.org/x/exp v0.0.0-20200207192155-f17229e696bd/go.mod h1:J/WKrq2StrnmMY6+EHIKF9dgMWnmCNThgcyBT1FY9mM=
 golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6/go.mod h1:3jZMyOhIsHpP37uCMkUooju7aAi5cS1Q23tOzKc+0MU=
 golang.org/x/image v0.0.0-20190227222117-0694c2d4d067/go.mod h1:kZ7UVZpmo3dzQBMxlp+ypCbDeSB+sBbTgSJuh5dn5js=
+golang.org/x/image v0.0.0-20190802002840-cff245a6509b h1:+qEpEAPhDZ1o0x3tHzZTQDArnOixOzGD9HUJfcg0mb4=
 golang.org/x/image v0.0.0-20190802002840-cff245a6509b/go.mod h1:FeLwcggjj3mMvU+oOTbSwawSJRM1uh48EjtB4UJZlP0=
 golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3/go.mod h1:UVdnD1Gm6xHRNCYTkRU2/jEulfH38KcIWyp/GAMgvoE=
 golang.org/x/lint v0.0.0-20190227174305-5b3e6a55c961/go.mod h1:wehouNa3lNwaWXcvxsM5YxQ5yQlVC4a0KAMCusXpPoU=

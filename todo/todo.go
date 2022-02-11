@@ -3,15 +3,17 @@ package todo
 import (
 	"encoding/json"
 
+	"github.com/awisu2/goTodo/status"
 	"github.com/awisu2/goUtils/files"
 )
 
 type TodoStatus string
 
 type Todo struct {
-	ID      int    `json:"id"`
-	Subject string `json:"subject"`
-	Status  string `json:"status"`
+	ID      int           `json:"id"`
+	Subject string        `json:"subject"` // main content
+	Status  status.Status `json:"status"`
+	Note    string        `json:"note"` // any/sub text
 }
 
 type Todos struct {
@@ -42,7 +44,8 @@ func (t *Todos) Save(file string) error {
 	if err != nil {
 		return err
 	}
-	if err := files.Save(json, file); err != nil {
+
+	if err := files.SaveWithMkdirAll(json, file, 0777); err != nil {
 		return err
 	}
 	return nil

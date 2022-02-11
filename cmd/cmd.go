@@ -1,6 +1,9 @@
 package cmd
 
-import "github.com/spf13/cobra"
+import (
+	"github.com/awisu2/goTodo/cmd/note"
+	"github.com/spf13/cobra"
+)
 
 type RootArg struct {
 	File string
@@ -20,6 +23,8 @@ func init() {
 
 	rootCmd.PersistentFlags().StringVarP(&rootArg.File, "file", "f", "", "target json file")
 	rootCmd.MarkPersistentFlagRequired("file")
+
+	rootCmd.AddCommand(note.Cmd)
 }
 
 func onInitialize() {

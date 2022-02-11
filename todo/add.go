@@ -8,13 +8,13 @@ import (
 func Add(file string, subject string) error {
 	// 既存データがあれば読み込み
 	var todos Todos
-	if err := files.IsExists(file); err != nil {
-		todos = Todos{
-			Todos: []Todo{},
-		}
-	} else {
+	if files.IsExists(file) {
 		if err := read(file, &todos); err != nil {
 			return err
+		}
+	} else {
+		todos = Todos{
+			Todos: []Todo{},
 		}
 	}
 
